@@ -1,1 +1,0 @@
-print('dynamic'); print('busan')
