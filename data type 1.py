@@ -21,3 +21,5 @@ print(type(b))
 c = "string"
 print(c)
 print(type(c))
+
+
