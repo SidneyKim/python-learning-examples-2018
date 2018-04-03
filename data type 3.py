@@ -24,3 +24,14 @@ print(a)
 print(a.count(1))
 
 print(len(a))
+
+
+myList = [10,"abc",(1,2,3),False,3.14]
+
+print(myList)
+print(type(myList))
+
+print(type(myList[2]))
+
+print(myList[2][1])
+
