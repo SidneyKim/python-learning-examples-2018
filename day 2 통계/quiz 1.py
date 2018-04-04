@@ -28,17 +28,17 @@ fp.close()
 # 살인 사건이 10건이상 발생한 서명, 건수
 
 a = max(data, key=lambda n : n['kill'])
-print('살인이 가장많은 서명 %(pname)s, 살인발생 건수 %(kill)s'%a)
+print('살인이 가장많은 서명: %(pname)s, 살인발생 건수: %(kill)s'%a)
 
 b = round(mean([ n['kill'] for n in data]),2)
-print('평균 살인사건 발생 수 %10.2f'%b)
+print('평균 살인사건 발생 수: %10.2f'%b)
 
 c = sum([ n['kang'] for n in data])
-print('전체 강도사건 발생 수 %10d'%c)
+print('전체 강도사건 발생 수: %10d'%c)
 
 d = list(filter(lambda n : n['kill']>=10, data))
 print()
 print('살인 10건이상 서명, 건수')
 
 for x in d:
-    print('%(pname)8s \t 건수 %(kill)5d'%x)
+    print('%(pname)8s \t %(kill)5d 건'%x)
